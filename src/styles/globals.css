@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  KEEPSTEAD™ — Global CSS
+  CSS variables default to Daylight theme.
+  useTheme hook overwrites these at runtime based on user setting.
+  Never hardcode colors in components — use var(--ks-*) or Tailwind ks-* classes.
+*/
+
+:root {
+  --ks-navBg: #ffffff;
+  --ks-navBorder: #e5eaf0;
+  --ks-logoPrimary: #1a2a3a;
+  --ks-logoAccent: #2563eb;
+  --ks-heroBg: #f7faff;
+  --ks-eyebrow: #2563eb;
+  --ks-h1Color: #1a2a3a;
+  --ks-h1Accent: #2563eb;
+  --ks-subColor: #4a5568;
+  --ks-btnBg: #2563eb;
+  --ks-btnText: #ffffff;
+  --ks-roomBg: #eef4ff;
+  --ks-roomNameColor: #1a2a3a;
+  --ks-roomDescColor: #4a5568;
+  --ks-priceBorder: #e5eaf0;
+  --ks-priceBg: #eef4ff;
+  --ks-priceAmt: #1a2a3a;
+  --ks-priceLbl: #4a5568;
+  --ks-inputBg: #ffffff;
+  --ks-inputBorder: #cbd5e0;
+  --ks-inputText: #1a2a3a;
+  --ks-cardBg: #ffffff;
+  --ks-cardBorder: #e5eaf0;
+  --ks-accent: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--ks-heroBg);
+  color: var(--ks-h1Color);
+  font-family: Georgia, Cambria, serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth theme transitions */
+*, *::before, *::after {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.15s ease;
+}
+
+/* Override transition for interactive elements — they should be instant */
+button, a, input, select, textarea {
+  transition: none;
+}
