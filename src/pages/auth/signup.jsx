@@ -55,7 +55,7 @@ export default function Signup() {
             Your house is ready.
           </h1>
           <p style={{ fontSize: 14, color: colors.subColor, lineHeight: 1.6, marginBottom: 24 }}>
-            Check your email to confirm your account, then come on in.
+            Use the email and password you just created to sign in and walk through your front door.
           </p>
           <a href="/auth/login" style={{
             display: "inline-block",
@@ -68,7 +68,7 @@ export default function Signup() {
             textDecoration: "none",
             fontWeight: "bold",
           }}>
-            Go to sign in
+            Sign in now
           </a>
         </div>
       </div>
